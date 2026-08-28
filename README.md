@@ -21,10 +21,21 @@
 ## 页面功能
 
 - 顶部搜索栏: 按群名 / 地址 / 触发项 / 发送至过滤
-- 群名点击直接跳对应查询群 (Telegram 私域深链 telegram.me)
+- 群名点击直接跳对应查询群 (TG 私域深链 `tg://resolve?domain=c/{chat_id}`)
 - 通知文本默认折叠 1 行 preview, 点击展开全文
 - 一键 "复制通知" 按钮, 跳过 ✂ 分隔线复制纯通知文本
 - 🏠 跳转群按钮 (橙色, TG 深链直达)
+
+## ⚠️ 跳转群前提
+
+私域群 (没公开 username) 必须用 `tg://` 协议唤起 Telegram Desktop 客户端才能进群。
+**要求**: Windows 必须装 [Telegram Desktop 客户端](https://desktop.telegram.org/)
+
+- ✅ 浏览器点 `tg://resolve?domain=c/{chat_id}` → 弹"在 Telegram 中打开"对话框 → 确认 → 直接进群
+- ❌ 用 `https://t.me/c/{chat_id}` 浏览器会被 TG 服务器重定向到 telegram.org 主页 (因为没装浏览器扩展 + 没在 web.telegram.org 登录)
+- ❌ 群组映射表里没存 invite_link (8/27 拉 s2 dialogs 时漏了), 暂时没 invite 链接 fallback
+
+如果 Windows 没装 Telegram Desktop, 点跳转群会提示"找不到应用", 装一下即可。
 
 ## 数据源
 

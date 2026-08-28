@@ -139,13 +139,23 @@ def match_group(group_name, exact, norm):
 
 
 def chat_id_to_tg_url(chat_id):
-    """chat_id (TG Channel/Supergroup, -100xxx) → telegram.me/c/xxx"""
+    """chat_id (TG Supergroup, -100xxx) → tg:// 深链唤起 Telegram Desktop 直接进群
+
+    注意: 私域群 (没公开 username) 用 https://t.me/c/chat_id 在浏览器会被 TG
+    服务器重定向到 telegram.org 主页 (因为 web 客户端检测不到当前 user 是群成员
+    且没装桌面客户端拦截), 必须用 tg:// 协议唤起本地 Telegram Desktop 客户端。
+
+    前提: Windows 装了 Telegram Desktop 客户端 (https://desktop.telegram.org/),
+    浏览器点 tg:// 链接会自动弹出"在 Telegram 中打开"对话框, user 确认后直接进群。
+    """
     s = str(chat_id)
     if s.startswith('-100'):
-        return f'https://telegram.me/c/{s[4:]}'
-    if s.startswith('-'):
-        return f'https://telegram.me/c/{s[1:]}'
-    return f'https://telegram.me/c/{s}'
+        cid = s[4:]
+    elif s.startswith('-'):
+        cid = s[1:]
+    else:
+        cid = s
+    return f'tg://resolve?domain=c/{cid}'
 
 
 def render_html(items, source_files):
@@ -165,8 +175,9 @@ def render_html(items, source_files):
         chat_id, match_type = match_group(group, EXACT, NORM)
         if chat_id:
             tg_url = chat_id_to_tg_url(chat_id)
-            group_cell = f'<a class="group-link" href="{tg_url}" target="_blank" rel="noopener">{html.escape(group)}</a>'
-            jump_btn = f'<a class="copy-group-btn" href="{tg_url}" target="_blank" rel="noopener">跳转群</a>'
+            # 群名 click 走 tg:// (唤起 Telegram Desktop), 按钮 click 也一样
+            group_cell = f'<a class="group-link" href="{tg_url}" rel="noopener">{html.escape(group)}</a>'
+            jump_btn = f'<a class="copy-group-btn" href="{tg_url}" rel="noopener">跳转群</a>'
         else:
             group_cell = f'{html.escape(group)} <span class="badge-no-match">❌ {match_type}</span>'
             jump_btn = f'<span class="copy-group-btn disabled" title="群名未匹配映射表">未匹配</span>'
