@@ -1,0 +1,3956 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>违规通知下发索引 - 0827</title>
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+         margin: 0; padding: 16px; background: #f5f5f7; color: #1d1d1f; }
+  h1 { font-size: 20px; margin: 0 0 4px; }
+  .meta { color: #6e6e73; font-size: 13px; margin-bottom: 12px; }
+  .search-bar { position: sticky; top: 0; background: rgba(245,245,247,0.95);
+                 backdrop-filter: blur(8px); padding: 12px 0; margin-bottom: 12px;
+                 border-bottom: 1px solid #d2d2d7; z-index: 10; }
+  .search-bar input { width: 100%; max-width: 600px; padding: 10px 14px; font-size: 15px;
+                       border: 1px solid #d2d2d7; border-radius: 8px; background: #fff; outline: none; }
+  .search-bar input:focus { border-color: #0071e3; box-shadow: 0 0 0 3px rgba(0,113,227,0.15); }
+  .stats { margin-left: 12px; color: #6e6e73; font-size: 13px; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px;
+           overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #f0f0f3;
+            font-size: 13px; vertical-align: top; }
+  th { background: #fafafc; font-weight: 600; color: #6e6e73; font-size: 12px;
+        text-transform: uppercase; letter-spacing: 0.5px; }
+  tr:hover td { background: #f8f9fb; }
+  .addr { font-family: "SF Mono", Consolas, monospace; font-size: 12px; color: #6e6e73; }
+  .idx { color: #6e6e73; font-size: 12px; font-weight: 500; white-space: nowrap; }
+  .target { color: #6e6e73; font-size: 12px; white-space: nowrap; }
+  .content-cell { max-width: 380px; }
+  .content-cell details summary { cursor: pointer; color: #6e6e73; font-size: 12px;
+                                    padding: 2px 0; outline: none; }
+  .content-cell details summary:hover { color: #0071e3; }
+  .content-cell details[open] summary { color: #1d1d1f; font-weight: 500; margin-bottom: 6px; }
+  .content-full { background: #f8f9fb; padding: 10px; border-radius: 6px;
+                   font-size: 12px; line-height: 1.5; white-space: pre-wrap;
+                   word-wrap: break-word; max-height: 400px; overflow-y: auto;
+                   font-family: "SF Mono", Consolas, monospace; }
+  .actions { white-space: nowrap; }
+  .group-link { color: #1d1d1f; font-weight: 500; text-decoration: none; border-bottom: 1px dashed #d2d2d7; }
+  .group-link:hover { color: #0071e3; border-bottom-color: #0071e3; }
+  .badge-no-match { display: inline-block; padding: 1px 5px; border-radius: 3px;
+                     font-size: 10px; background: #ffe4e1; color: #c0392b; margin-left: 4px; }
+  .empty { padding: 40px; text-align: center; color: #999; }
+  .copy-btn { background: #0071e3; color: #fff; border: none; border-radius: 5px;
+               padding: 5px 10px; font-size: 12px; cursor: pointer;
+               white-space: nowrap; transition: background-color 0.15s;
+               min-width: 78px; box-sizing: border-box; text-align: center; margin-left: 4px; }
+  .copy-btn:hover { background: #005bb5; }
+  .copy-btn.copied { background: #28a745; }
+  .copy-group-btn { background: linear-gradient(135deg, #ff9500 0%, #ff6b00 100%);
+                     color: #fff; border: none; border-radius: 5px;
+                     padding: 5px 10px; font-size: 12px; cursor: pointer;
+                     white-space: nowrap; box-shadow: 0 1px 3px rgba(255,107,0,0.4);
+                     min-width: 78px; box-sizing: border-box; text-align: center;
+                     text-decoration: none; display: inline-block; }
+  .copy-group-btn::before { content: '🏠'; margin-right: 3px;
+                              filter: drop-shadow(0 1px 1px rgba(0,0,0,0.2)); }
+  .copy-group-btn:hover { background: linear-gradient(135deg, #ffaa33 0%, #ff8000 100%); }
+  .copy-group-btn.disabled { background: #e8e8ed; color: #999; cursor: not-allowed;
+                             box-shadow: none; }
+  .copy-group-btn.disabled::before { content: '❌'; }
+</style>
+</head>
+<body>
+<h1>📢 违规通知下发索引</h1>
+<div class="meta">
+  源文件: 0827.txt ·
+  共 <strong>58</strong> 条 ·
+  群名匹配: <strong>56/58</strong> (96%) ·
+  生成时间: 2026-08-29
+</div>
+<div class="search-bar">
+  <input type="text" id="search" placeholder="搜索 群名 / 地址 / 触发项 / 发送至..." autofocus>
+  <span class="stats" id="stats"></span>
+</div>
+<table>
+<thead><tr>
+  <th>#</th><th>查询群</th><th>地址</th><th>触发项</th><th>发送至</th><th>通知预览</th><th>操作</th>
+</tr></thead>
+<tbody id="rows">
+
+<tr data-group="9-未来" data-addr="0xCb8ae20f50913A82D416a37D6E07f2485074fc5D" data-trigger="1">
+  <td class="idx">1/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/2899174573" target="_blank" rel="noopener">9-未来</a></td>
+  <td class="addr" title="0xCb8ae20f50913A82D416a37D6E07f2485074fc5D">0xCb8ae2…74fc5D</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 9-未来</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：9-未来
+🔗 地址：0xCb8ae20f50913A82D416a37D6E07f2485074fc5D
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：217.9689 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/2899174573" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：9-未来
+🔗 地址：0xCb8ae20f50913A82D416a37D6E07f2485074fc5D
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：217.9689 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="9-赢天下" data-addr="0x8d9bbdDe012d7fc60A16484Eaad1cAE2Ce93E555" data-trigger="1">
+  <td class="idx">2/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/2986950967" target="_blank" rel="noopener">9-赢天下</a></td>
+  <td class="addr" title="0x8d9bbdDe012d7fc60A16484Eaad1cAE2Ce93E555">0x8d9bbd…93E555</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 9-赢天下</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：9-赢天下
+🔗 地址：0x8d9bbdDe012d7fc60A16484Eaad1cAE2Ce93E555
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：静态0天 68.0891 U；动态0天 84.8900 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/2986950967" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：9-赢天下
+🔗 地址：0x8d9bbdDe012d7fc60A16484Eaad1cAE2Ce93E555
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：静态0天 68.0891 U；动态0天 84.8900 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="7-九火郑州开心" data-addr="0x06de2F77540813DeEA824884fFA56e467EDbfF76" data-trigger="1">
+  <td class="idx">3/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/2754769584" target="_blank" rel="noopener">7-九火郑州开心</a></td>
+  <td class="addr" title="0x06de2F77540813DeEA824884fFA56e467EDbfF76">0x06de2F…DbfF76</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 7-九火郑州开心</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-九火郑州开心
+🔗 地址：0x06de2F77540813DeEA824884fFA56e467EDbfF76
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 313.0207 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/2754769584" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-九火郑州开心
+🔗 地址：0x06de2F77540813DeEA824884fFA56e467EDbfF76
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 313.0207 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="7-鼎峰" data-addr="0x1bc3803474B248E4eCB2628e783902D9F1A6cA46" data-trigger="1">
+  <td class="idx">4/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3097405140" target="_blank" rel="noopener">7-鼎峰</a></td>
+  <td class="addr" title="0x1bc3803474B248E4eCB2628e783902D9F1A6cA46">0x1bc380…A6cA46</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 7-鼎峰</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-鼎峰
+🔗 地址：0x1bc3803474B248E4eCB2628e783902D9F1A6cA46
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 15.3616 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3097405140" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-鼎峰
+🔗 地址：0x1bc3803474B248E4eCB2628e783902D9F1A6cA46
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 15.3616 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="7-同泽" data-addr="0x270097F72660B14500003474DeD08Ceb49C86511" data-trigger="1">
+  <td class="idx">5/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/2990216568" target="_blank" rel="noopener">7-同泽</a></td>
+  <td class="addr" title="0x270097F72660B14500003474DeD08Ceb49C86511">0x270097…C86511</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 7-同泽</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-同泽
+🔗 地址：0x270097F72660B14500003474DeD08Ceb49C86511
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 卖币剩余 U 超标
+　　卖出 ARK：475.5590 枚（卖出获得：2,404.4456 U）
+　　涡轮 ARK：103.5859 枚（涡轮花费：539.9211 U）
+　　差额 U：1,864.5244 U（并未购买贡献值）
+　　警戒线：1,000 U
+
+　　💡 差额 U 是什么？
+　　　你卖币拿到的 U，减去做涡轮花掉的 U，
+　　　剩下没有投回生态、也没有拿去买贡献值的部分。
+　　　2,404.4456 − 539.9211 = 1,864.5244 U
+　　　这笔钱留着是可以的，但金额过大等同于变相套现，
+　　　超过 1,000 U 即触发警报。
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 卖币所得请回流生态，勿大额留存
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/2990216568" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-同泽
+🔗 地址：0x270097F72660B14500003474DeD08Ceb49C86511
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 卖币剩余 U 超标
+　　卖出 ARK：475.5590 枚（卖出获得：2,404.4456 U）
+　　涡轮 ARK：103.5859 枚（涡轮花费：539.9211 U）
+　　差额 U：1,864.5244 U（并未购买贡献值）
+　　警戒线：1,000 U
+
+　　💡 差额 U 是什么？
+　　　你卖币拿到的 U，减去做涡轮花掉的 U，
+　　　剩下没有投回生态、也没有拿去买贡献值的部分。
+　　　2,404.4456 − 539.9211 = 1,864.5244 U
+　　　这笔钱留着是可以的，但金额过大等同于变相套现，
+　　　超过 1,000 U 即触发警报。
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 卖币所得请回流生态，勿大额留存
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="8-万象（开源）" data-addr="0x45dA060DAb2afB92eCBB5b5703D2e5C73e2f1943" data-trigger="1">
+  <td class="idx">6/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3144991656" target="_blank" rel="noopener">8-万象（开源）</a></td>
+  <td class="addr" title="0x45dA060DAb2afB92eCBB5b5703D2e5C73e2f1943">0x45dA06…2f1943</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 8-万象（开源）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：8-万象（开源）
+🔗 地址：0x45dA060DAb2afB92eCBB5b5703D2e5C73e2f1943
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 卖币剩余 U 超标
+　　卖出 ARK：889.1357 枚（卖出获得：4,495.5570 U）
+　　涡轮 ARK：438.1309 枚（涡轮花费：2,285.1782 U）
+　　差额 U：2,210.3787 U（并未购买贡献值）
+　　警戒线：1,000 U
+
+　　💡 差额 U 是什么？
+　　　你卖币拿到的 U，减去做涡轮花掉的 U，
+　　　剩下没有投回生态、也没有拿去买贡献值的部分。
+　　　4,495.5570 − 2,285.1782 = 2,210.3787 U
+　　　这笔钱留着是可以的，但金额过大等同于变相套现，
+　　　超过 1,000 U 即触发警报。
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 卖币所得请回流生态，勿大额留存
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3144991656" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：8-万象（开源）
+🔗 地址：0x45dA060DAb2afB92eCBB5b5703D2e5C73e2f1943
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 卖币剩余 U 超标
+　　卖出 ARK：889.1357 枚（卖出获得：4,495.5570 U）
+　　涡轮 ARK：438.1309 枚（涡轮花费：2,285.1782 U）
+　　差额 U：2,210.3787 U（并未购买贡献值）
+　　警戒线：1,000 U
+
+　　💡 差额 U 是什么？
+　　　你卖币拿到的 U，减去做涡轮花掉的 U，
+　　　剩下没有投回生态、也没有拿去买贡献值的部分。
+　　　4,495.5570 − 2,285.1782 = 2,210.3787 U
+　　　这笔钱留着是可以的，但金额过大等同于变相套现，
+　　　超过 1,000 U 即触发警报。
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 卖币所得请回流生态，勿大额留存
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="7-爱迪生串串（爱迪生）" data-addr="0x630D585D6ADDcdbc59896D0304EEF6A6a39ee27f" data-trigger="1">
+  <td class="idx">7/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3291446818" target="_blank" rel="noopener">7-爱迪生串串（爱迪生）</a></td>
+  <td class="addr" title="0x630D585D6ADDcdbc59896D0304EEF6A6a39ee27f">0x630D58…9ee27f</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 7-爱迪生串串（爱迪生）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-爱迪生串串（爱迪生）
+🔗 地址：0x630D585D6ADDcdbc59896D0304EEF6A6a39ee27f
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天／20天
+　　明细：静态0天 70.0708 U；动态0天 84.9756 U；动态20天 20.8903 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3291446818" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-爱迪生串串（爱迪生）
+🔗 地址：0x630D585D6ADDcdbc59896D0304EEF6A6a39ee27f
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天／20天
+　　明细：静态0天 70.0708 U；动态0天 84.9756 U；动态20天 20.8903 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="7-举德（龙城）" data-addr="0xB9903110b073fFf188B57271480C2aD733E1c376" data-trigger="1">
+  <td class="idx">8/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3738174021" target="_blank" rel="noopener">7-举德（龙城）</a></td>
+  <td class="addr" title="0xB9903110b073fFf188B57271480C2aD733E1c376">0xB99031…E1c376</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 7-举德（龙城）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-举德（龙城）
+🔗 地址：0xB9903110b073fFf188B57271480C2aD733E1c376
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 163.6995 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3738174021" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-举德（龙城）
+🔗 地址：0xB9903110b073fFf188B57271480C2aD733E1c376
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 163.6995 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="7-中原" data-addr="0xD76a298B27DD7F9C3f529e5730Ff0C0f51eDdd20" data-trigger="2">
+  <td class="idx">9/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/2921720900" target="_blank" rel="noopener">7-中原</a></td>
+  <td class="addr" title="0xD76a298B27DD7F9C3f529e5730Ff0C0f51eDdd20">0xD76a29…eDdd20</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ 7-中原</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-中原
+🔗 地址：0xD76a298B27DD7F9C3f529e5730Ff0C0f51eDdd20
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 32.5761 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 转出未报备
+　　非白名单转出：656.5577 ARK
+　　非白名单转入：88.1171 ARK
+　　净转出：568.4405 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/2921720900" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-中原
+🔗 地址：0xD76a298B27DD7F9C3f529e5730Ff0C0f51eDdd20
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 32.5761 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 转出未报备
+　　非白名单转出：656.5577 ARK
+　　非白名单转入：88.1171 ARK
+　　净转出：568.4405 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-橡树福州 505（橡树）" data-addr="0x2AaF9103A8D1f54c308a1166a4DEea60B882EECd" data-trigger="1">
+  <td class="idx">10/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3179872377" target="_blank" rel="noopener">6-橡树福州 505（橡树）</a></td>
+  <td class="addr" title="0x2AaF9103A8D1f54c308a1166a4DEea60B882EECd">0x2AaF91…82EECd</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 6-橡树福州 505（橡树）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-橡树福州 505（橡树）
+🔗 地址：0x2AaF9103A8D1f54c308a1166a4DEea60B882EECd
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：420.0000 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3179872377" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-橡树福州 505（橡树）
+🔗 地址：0x2AaF9103A8D1f54c308a1166a4DEea60B882EECd
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：420.0000 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="7-创亿阿国（创亿）" data-addr="0x40F3C9e3C885602D95F051e047B0524a772fe5F0" data-trigger="1">
+  <td class="idx">11/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3208620204" target="_blank" rel="noopener">7-创亿阿国（创亿）</a></td>
+  <td class="addr" title="0x40F3C9e3C885602D95F051e047B0524a772fe5F0">0x40F3C9…2fe5F0</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 7-创亿阿国（创亿）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-创亿阿国（创亿）
+🔗 地址：0x40F3C9e3C885602D95F051e047B0524a772fe5F0
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：静态0天 260.6419 U；动态0天 77.8193 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3208620204" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-创亿阿国（创亿）
+🔗 地址：0x40F3C9e3C885602D95F051e047B0524a772fe5F0
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：静态0天 260.6419 U；动态0天 77.8193 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-福东（开源）" data-addr="0x4516434Eac746392EB8E2B516a3FC7b1288b2aFC" data-trigger="1">
+  <td class="idx">12/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3285604021" target="_blank" rel="noopener">6-福东（开源）</a></td>
+  <td class="addr" title="0x4516434Eac746392EB8E2B516a3FC7b1288b2aFC">0x451643…8b2aFC</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 6-福东（开源）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-福东（开源）
+🔗 地址：0x4516434Eac746392EB8E2B516a3FC7b1288b2aFC
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：559.9033 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3285604021" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-福东（开源）
+🔗 地址：0x4516434Eac746392EB8E2B516a3FC7b1288b2aFC
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：559.9033 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-新吉旺（幸运）" data-addr="0x84a4eb76468cE2C97c14B655908ECb84635F72c0" data-trigger="2">
+  <td class="idx">13/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3807180370" target="_blank" rel="noopener">6-新吉旺（幸运）</a></td>
+  <td class="addr" title="0x84a4eb76468cE2C97c14B655908ECb84635F72c0">0x84a4eb…5F72c0</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ 6-新吉旺（幸运）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-新吉旺（幸运）
+🔗 地址：0x84a4eb76468cE2C97c14B655908ECb84635F72c0
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 175.1717 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 卖币剩余 U 超标
+　　卖出 ARK：653.1527 枚（卖出获得：3,306.4639 U）
+　　涡轮 ARK：326.5763 枚（涡轮花费：1,709.7390 U）
+　　差额 U：1,596.7249 U（并未购买贡献值）
+　　警戒线：1,000 U
+
+　　💡 差额 U 是什么？
+　　　你卖币拿到的 U，减去做涡轮花掉的 U，
+　　　剩下没有投回生态、也没有拿去买贡献值的部分。
+　　　3,306.4639 − 1,709.7390 = 1,596.7249 U
+　　　这笔钱留着是可以的，但金额过大等同于变相套现，
+　　　超过 1,000 U 即触发警报。
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 卖币所得请回流生态，勿大额留存
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3807180370" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-新吉旺（幸运）
+🔗 地址：0x84a4eb76468cE2C97c14B655908ECb84635F72c0
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 175.1717 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 卖币剩余 U 超标
+　　卖出 ARK：653.1527 枚（卖出获得：3,306.4639 U）
+　　涡轮 ARK：326.5763 枚（涡轮花费：1,709.7390 U）
+　　差额 U：1,596.7249 U（并未购买贡献值）
+　　警戒线：1,000 U
+
+　　💡 差额 U 是什么？
+　　　你卖币拿到的 U，减去做涡轮花掉的 U，
+　　　剩下没有投回生态、也没有拿去买贡献值的部分。
+　　　3,306.4639 − 1,709.7390 = 1,596.7249 U
+　　　这笔钱留着是可以的，但金额过大等同于变相套现，
+　　　超过 1,000 U 即触发警报。
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 卖币所得请回流生态，勿大额留存
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-荣成（九火淄博）" data-addr="0x868849D810ef129eb61149e2Df7be5E9668319ba" data-trigger="2">
+  <td class="idx">14/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3824654247" target="_blank" rel="noopener">6-荣成（九火淄博）</a></td>
+  <td class="addr" title="0x868849D810ef129eb61149e2Df7be5E9668319ba">0x868849…8319ba</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ 6-荣成（九火淄博）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-荣成（九火淄博）
+🔗 地址：0x868849D810ef129eb61149e2Df7be5E9668319ba
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 39.6546 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 地址余额超标
+　　当前 ARK 余额：240.1450 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3824654247" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-荣成（九火淄博）
+🔗 地址：0x868849D810ef129eb61149e2Df7be5E9668319ba
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 39.6546 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 地址余额超标
+　　当前 ARK 余额：240.1450 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="7-荣耀（九火合肥）" data-addr="0x9177E9b919ef818fBf25cf4558531Cba3Cb46A5F" data-trigger="1">
+  <td class="idx">15/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3191592054" target="_blank" rel="noopener">7-荣耀（九火合肥）</a></td>
+  <td class="addr" title="0x9177E9b919ef818fBf25cf4558531Cba3Cb46A5F">0x9177E9…b46A5F</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 7-荣耀（九火合肥）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-荣耀（九火合肥）
+🔗 地址：0x9177E9b919ef818fBf25cf4558531Cba3Cb46A5F
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 46.8957 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3191592054" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-荣耀（九火合肥）
+🔗 地址：0x9177E9b919ef818fBf25cf4558531Cba3Cb46A5F
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 46.8957 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="7-道合（幸运）" data-addr="0x9977D703D6dD3Fb270f0611B1B8745d162B0190A" data-trigger="1">
+  <td class="idx">16/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3414156256" target="_blank" rel="noopener">7-道合（幸运）</a></td>
+  <td class="addr" title="0x9977D703D6dD3Fb270f0611B1B8745d162B0190A">0x9977D7…B0190A</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 7-道合（幸运）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-道合（幸运）
+🔗 地址：0x9977D703D6dD3Fb270f0611B1B8745d162B0190A
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 转出未报备
+　　非白名单转出：150.0000 ARK
+　　非白名单转入：0 ARK
+　　净转出：150.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3414156256" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-道合（幸运）
+🔗 地址：0x9977D703D6dD3Fb270f0611B1B8745d162B0190A
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 转出未报备
+　　非白名单转出：150.0000 ARK
+　　非白名单转入：0 ARK
+　　净转出：150.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-九火大G（九火）" data-addr="0xB1489E2C15a6179750D43278dAFf51Ad8A4e8AA4" data-trigger="2">
+  <td class="idx">17/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3223080649" target="_blank" rel="noopener">6-九火大G（九火）</a></td>
+  <td class="addr" title="0xB1489E2C15a6179750D43278dAFf51Ad8A4e8AA4">0xB1489E…4e8AA4</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ 6-九火大G（九火）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-九火大G（九火）
+🔗 地址：0xB1489E2C15a6179750D43278dAFf51Ad8A4e8AA4
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：静态0天 146.0198 U；动态0天 39.4454 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 转出未报备
+　　非白名单转出：169.9091 ARK
+　　非白名单转入：0 ARK
+　　净转出：169.9091 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3223080649" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-九火大G（九火）
+🔗 地址：0xB1489E2C15a6179750D43278dAFf51Ad8A4e8AA4
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：静态0天 146.0198 U；动态0天 39.4454 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 转出未报备
+　　非白名单转出：169.9091 ARK
+　　非白名单转入：0 ARK
+　　净转出：169.9091 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-无锡（爱迪生TZ)" data-addr="0xdb2a2DA9fadfa91706Ffb85a78A6bc331627eB0c" data-trigger="1">
+  <td class="idx">18/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3054484539" target="_blank" rel="noopener">6-无锡（爱迪生TZ)</a></td>
+  <td class="addr" title="0xdb2a2DA9fadfa91706Ffb85a78A6bc331627eB0c">0xdb2a2D…27eB0c</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 6-无锡（爱迪生TZ)</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-无锡（爱迪生TZ)
+🔗 地址：0xdb2a2DA9fadfa91706Ffb85a78A6bc331627eB0c
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 73.6148 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3054484539" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-无锡（爱迪生TZ)
+🔗 地址：0xdb2a2DA9fadfa91706Ffb85a78A6bc331627eB0c
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 73.6148 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-All in -1" data-addr="0xDE55e4f4387467ed7259fAD3c55810ce011EE6cD" data-trigger="1">
+  <td class="idx">19/58</td>
+  <td class="group-cell">6-All in -1 <span class="badge-no-match">❌ no-match</span></td>
+  <td class="addr" title="0xDE55e4f4387467ed7259fAD3c55810ce011EE6cD">0xDE55e4…1EE6cD</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 6-All in -1</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-All in -1
+🔗 地址：0xDE55e4f4387467ed7259fAD3c55810ce011EE6cD
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：400.0000 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><span class="copy-group-btn disabled" title="群名未匹配映射表">未匹配</span><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-All in -1
+🔗 地址：0xDE55e4f4387467ed7259fAD3c55810ce011EE6cD
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：400.0000 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="7-飞翔（开源万象）" data-addr="0xe037C2a696452c9Db18a55E3aC5031F080ac8F14" data-trigger="1">
+  <td class="idx">20/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3126840596" target="_blank" rel="noopener">7-飞翔（开源万象）</a></td>
+  <td class="addr" title="0xe037C2a696452c9Db18a55E3aC5031F080ac8F14">0xe037C2…ac8F14</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 7-飞翔（开源万象）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-飞翔（开源万象）
+🔗 地址：0xe037C2a696452c9Db18a55E3aC5031F080ac8F14
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：静态30天 45.9327 U；动态30天 69.2142 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3126840596" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：7-飞翔（开源万象）
+🔗 地址：0xe037C2a696452c9Db18a55E3aC5031F080ac8F14
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：静态30天 45.9327 U；动态30天 69.2142 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-链富（爱迪生）查询群" data-addr="0x03e4481a6CeA45A146b19d6eB92Ae6E6b4737eaE" data-trigger="1">
+  <td class="idx">21/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3080513832" target="_blank" rel="noopener">6-链富（爱迪生）查询群</a></td>
+  <td class="addr" title="0x03e4481a6CeA45A146b19d6eB92Ae6E6b4737eaE">0x03e448…737eaE</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 6-链富（爱迪生）查询群</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-链富（爱迪生）查询群
+🔗 地址：0x03e4481a6CeA45A146b19d6eB92Ae6E6b4737eaE
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 49.1968 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3080513832" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-链富（爱迪生）查询群
+🔗 地址：0x03e4481a6CeA45A146b19d6eB92Ae6E6b4737eaE
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 49.1968 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-九紫麒麟（九紫K总）" data-addr="0x091020b6AAF0fa1935CF75ac89064Bd13AC5D9Fd" data-trigger="1">
+  <td class="idx">22/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3828590636" target="_blank" rel="noopener">5-九紫麒麟（九紫K总）</a></td>
+  <td class="addr" title="0x091020b6AAF0fa1935CF75ac89064Bd13AC5D9Fd">0x091020…C5D9Fd</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-九紫麒麟（九紫K总）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-九紫麒麟（九紫K总）
+🔗 地址：0x091020b6AAF0fa1935CF75ac89064Bd13AC5D9Fd
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 52.9216 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3828590636" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-九紫麒麟（九紫K总）
+🔗 地址：0x091020b6AAF0fa1935CF75ac89064Bd13AC5D9Fd
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 52.9216 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-南康骏腾（众志）" data-addr="0x1362394a32382F0510F73511666dA19649AC247C" data-trigger="1">
+  <td class="idx">23/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3970054384" target="_blank" rel="noopener">5-南康骏腾（众志）</a></td>
+  <td class="addr" title="0x1362394a32382F0510F73511666dA19649AC247C">0x136239…AC247C</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-南康骏腾（众志）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-南康骏腾（众志）
+🔗 地址：0x1362394a32382F0510F73511666dA19649AC247C
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 9.0923 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3970054384" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-南康骏腾（众志）
+🔗 地址：0x1362394a32382F0510F73511666dA19649AC247C
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 9.0923 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-大熊猫（赢天下天一）" data-addr="0x1C17681f06bbe5CD90743af6DE9a025d7AC27DE1" data-trigger="2">
+  <td class="idx">24/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3032117572" target="_blank" rel="noopener">5-大熊猫（赢天下天一）</a></td>
+  <td class="addr" title="0x1C17681f06bbe5CD90743af6DE9a025d7AC27DE1">0x1C1768…C27DE1</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ 5-大熊猫（赢天下天一）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-大熊猫（赢天下天一）
+🔗 地址：0x1C17681f06bbe5CD90743af6DE9a025d7AC27DE1
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 32.9137 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 地址余额超标
+　　当前 ARK 余额：176.4209 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3032117572" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-大熊猫（赢天下天一）
+🔗 地址：0x1C17681f06bbe5CD90743af6DE9a025d7AC27DE1
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 32.9137 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 地址余额超标
+　　当前 ARK 余额：176.4209 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-石家庄（爱迪生非凡）" data-addr="0x3405f7E8aB7083F6A389D4E7785D9e0063829904" data-trigger="1">
+  <td class="idx">25/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3394614365" target="_blank" rel="noopener">5-石家庄（爱迪生非凡）</a></td>
+  <td class="addr" title="0x3405f7E8aB7083F6A389D4E7785D9e0063829904">0x3405f7…829904</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-石家庄（爱迪生非凡）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-石家庄（爱迪生非凡）
+🔗 地址：0x3405f7E8aB7083F6A389D4E7785D9e0063829904
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 35.5919 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3394614365" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-石家庄（爱迪生非凡）
+🔗 地址：0x3405f7E8aB7083F6A389D4E7785D9e0063829904
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 35.5919 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-砺剑阁（赢天下琅琊盛创）" data-addr="0x3A6eDD0bEe88A383006bd3648ae89A7830D5bECe" data-trigger="1">
+  <td class="idx">26/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3727494867" target="_blank" rel="noopener">5-砺剑阁（赢天下琅琊盛创）</a></td>
+  <td class="addr" title="0x3A6eDD0bEe88A383006bd3648ae89A7830D5bECe">0x3A6eDD…D5bECe</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-砺剑阁（赢天下琅琊盛创）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-砺剑阁（赢天下琅琊盛创）
+🔗 地址：0x3A6eDD0bEe88A383006bd3648ae89A7830D5bECe
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 4.3471 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3727494867" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-砺剑阁（赢天下琅琊盛创）
+🔗 地址：0x3A6eDD0bEe88A383006bd3648ae89A7830D5bECe
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 4.3471 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-精瑞（开源正源）" data-addr="0x42d890998E8F33e199eff284eb4d2b3625FB3678" data-trigger="2">
+  <td class="idx">27/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3736323331" target="_blank" rel="noopener">5-精瑞（开源正源）</a></td>
+  <td class="addr" title="0x42d890998E8F33e199eff284eb4d2b3625FB3678">0x42d890…FB3678</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ 5-精瑞（开源正源）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-精瑞（开源正源）
+🔗 地址：0x42d890998E8F33e199eff284eb4d2b3625FB3678
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 17.1158 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 地址余额超标
+　　当前 ARK 余额：100.9817 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3736323331" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-精瑞（开源正源）
+🔗 地址：0x42d890998E8F33e199eff284eb4d2b3625FB3678
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 17.1158 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 地址余额超标
+　　当前 ARK 余额：100.9817 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-九火泉州（九火）" data-addr="0x42E3e5DF912C8A1d7A48746058aeA80265aaB1cd" data-trigger="1">
+  <td class="idx">28/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/2930788066" target="_blank" rel="noopener">6-九火泉州（九火）</a></td>
+  <td class="addr" title="0x42E3e5DF912C8A1d7A48746058aeA80265aaB1cd">0x42E3e5…aaB1cd</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 6-九火泉州（九火）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-九火泉州（九火）
+🔗 地址：0x42E3e5DF912C8A1d7A48746058aeA80265aaB1cd
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 24.6987 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/2930788066" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-九火泉州（九火）
+🔗 地址：0x42E3e5DF912C8A1d7A48746058aeA80265aaB1cd
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 24.6987 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="-" data-addr="0x4418f8071ead082f5DF1949BE075aF2133671128" data-trigger="2">
+  <td class="idx">29/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3673388564" target="_blank" rel="noopener">-</a></td>
+  <td class="addr" title="0x4418f8071ead082f5DF1949BE075aF2133671128">0x4418f8…671128</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ -（地址尾號 671128）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：-
+🔗 地址：0x4418f8071ead082f5DF1949BE075aF2133671128
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：349.4380 枚
+　　细则上限：单地址 100 枚
+
+2️⃣ 转出未报备
+　　非白名单转出：9.0000 ARK
+　　非白名单转入：0 ARK
+　　净转出：9.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3673388564" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：-
+🔗 地址：0x4418f8071ead082f5DF1949BE075aF2133671128
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：349.4380 枚
+　　细则上限：单地址 100 枚
+
+2️⃣ 转出未报备
+　　非白名单转出：9.0000 ARK
+　　非白名单转入：0 ARK
+　　净转出：9.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-超凡（鸿鑫运程）" data-addr="0x48a25Ca5df065D7292205A3AF8d8C4C5179089c5" data-trigger="1">
+  <td class="idx">30/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3296412515" target="_blank" rel="noopener">6-超凡（鸿鑫运程）</a></td>
+  <td class="addr" title="0x48a25Ca5df065D7292205A3AF8d8C4C5179089c5">0x48a25C…9089c5</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 6-超凡（鸿鑫运程）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-超凡（鸿鑫运程）
+🔗 地址：0x48a25Ca5df065D7292205A3AF8d8C4C5179089c5
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 10.8888 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3296412515" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-超凡（鸿鑫运程）
+🔗 地址：0x48a25Ca5df065D7292205A3AF8d8C4C5179089c5
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 10.8888 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-柠檬（香蕉币富哥）" data-addr="0x53c111Ce760f450B9CDa850Cca5df0eEefC7E3f6" data-trigger="1">
+  <td class="idx">31/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3760863042" target="_blank" rel="noopener">5-柠檬（香蕉币富哥）</a></td>
+  <td class="addr" title="0x53c111Ce760f450B9CDa850Cca5df0eEefC7E3f6">0x53c111…C7E3f6</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-柠檬（香蕉币富哥）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-柠檬（香蕉币富哥）
+🔗 地址：0x53c111Ce760f450B9CDa850Cca5df0eEefC7E3f6
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 46.2133 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3760863042" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-柠檬（香蕉币富哥）
+🔗 地址：0x53c111Ce760f450B9CDa850Cca5df0eEefC7E3f6
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 46.2133 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-延平（赢天下天一）" data-addr="0x54d137D553A1746DfDcb13f69a35Fb7854222bd0" data-trigger="1">
+  <td class="idx">32/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3357045671" target="_blank" rel="noopener">6-延平（赢天下天一）</a></td>
+  <td class="addr" title="0x54d137D553A1746DfDcb13f69a35Fb7854222bd0">0x54d137…222bd0</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 6-延平（赢天下天一）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-延平（赢天下天一）
+🔗 地址：0x54d137D553A1746DfDcb13f69a35Fb7854222bd0
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 10.1483 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3357045671" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-延平（赢天下天一）
+🔗 地址：0x54d137D553A1746DfDcb13f69a35Fb7854222bd0
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 10.1483 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-自然（开源万象）" data-addr="0x5900149539c26D71d3F11B4BfaC825c25708E953" data-trigger="1">
+  <td class="idx">33/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3698351664" target="_blank" rel="noopener">5-自然（开源万象）</a></td>
+  <td class="addr" title="0x5900149539c26D71d3F11B4BfaC825c25708E953">0x590014…08E953</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-自然（开源万象）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-自然（开源万象）
+🔗 地址：0x5900149539c26D71d3F11B4BfaC825c25708E953
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 5.8970 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3698351664" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-自然（开源万象）
+🔗 地址：0x5900149539c26D71d3F11B4BfaC825c25708E953
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 5.8970 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-凤凰常熟（星河水蜜桃）" data-addr="0x5dAF902B6a12c092A2F85a726ec13c966C2eDdD3" data-trigger="1">
+  <td class="idx">34/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3718733500" target="_blank" rel="noopener">5-凤凰常熟（星河水蜜桃）</a></td>
+  <td class="addr" title="0x5dAF902B6a12c092A2F85a726ec13c966C2eDdD3">0x5dAF90…2eDdD3</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-凤凰常熟（星河水蜜桃）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-凤凰常熟（星河水蜜桃）
+🔗 地址：0x5dAF902B6a12c092A2F85a726ec13c966C2eDdD3
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：265.7948 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3718733500" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-凤凰常熟（星河水蜜桃）
+🔗 地址：0x5dAF902B6a12c092A2F85a726ec13c966C2eDdD3
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：265.7948 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-鹏程万里（九火郑州）" data-addr="0x5dE575d3541754eDeeA3bF3DDB81dde5029eD5F7" data-trigger="1">
+  <td class="idx">35/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/2754769584" target="_blank" rel="noopener">5-鹏程万里（九火郑州）</a></td>
+  <td class="addr" title="0x5dE575d3541754eDeeA3bF3DDB81dde5029eD5F7">0x5dE575…9eD5F7</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-鹏程万里（九火郑州）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-鹏程万里（九火郑州）
+🔗 地址：0x5dE575d3541754eDeeA3bF3DDB81dde5029eD5F7
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：201.6964 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/2754769584" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-鹏程万里（九火郑州）
+🔗 地址：0x5dE575d3541754eDeeA3bF3DDB81dde5029eD5F7
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：201.6964 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-九紫巴黎（九紫K总）" data-addr="0x5DEFb8E74FD1C4FA701057326Bf86025086D19Ab" data-trigger="1">
+  <td class="idx">36/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3127668139" target="_blank" rel="noopener">5-九紫巴黎（九紫K总）</a></td>
+  <td class="addr" title="0x5DEFb8E74FD1C4FA701057326Bf86025086D19Ab">0x5DEFb8…6D19Ab</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-九紫巴黎（九紫K总）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-九紫巴黎（九紫K总）
+🔗 地址：0x5DEFb8E74FD1C4FA701057326Bf86025086D19Ab
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：静态0天 16.4984 U；动态0天 53.2864 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3127668139" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-九紫巴黎（九紫K总）
+🔗 地址：0x5DEFb8E74FD1C4FA701057326Bf86025086D19Ab
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：静态0天 16.4984 U；动态0天 53.2864 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-福利（同泽迎和）" data-addr="0x6318f0d62B349878649666e0Bde324681e919d18" data-trigger="2">
+  <td class="idx">37/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3770749491" target="_blank" rel="noopener">5-福利（同泽迎和）</a></td>
+  <td class="addr" title="0x6318f0d62B349878649666e0Bde324681e919d18">0x6318f0…919d18</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ 5-福利（同泽迎和）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-福利（同泽迎和）
+🔗 地址：0x6318f0d62B349878649666e0Bde324681e919d18
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 9.4388 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 转出未报备
+　　非白名单转出：96.0000 ARK
+　　非白名单转入：64.0000 ARK
+　　净转出：32.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3770749491" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-福利（同泽迎和）
+🔗 地址：0x6318f0d62B349878649666e0Bde324681e919d18
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 9.4388 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 转出未报备
+　　非白名单转出：96.0000 ARK
+　　非白名单转入：64.0000 ARK
+　　净转出：32.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-九火南昌（九火）" data-addr="0x69eB25B4959a49017F2883f49C43E28AF6374aEe" data-trigger="1">
+  <td class="idx">38/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3158773025" target="_blank" rel="noopener">5-九火南昌（九火）</a></td>
+  <td class="addr" title="0x69eB25B4959a49017F2883f49C43E28AF6374aEe">0x69eB25…374aEe</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-九火南昌（九火）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-九火南昌（九火）
+🔗 地址：0x69eB25B4959a49017F2883f49C43E28AF6374aEe
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 36.4310 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3158773025" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-九火南昌（九火）
+🔗 地址：0x69eB25B4959a49017F2883f49C43E28AF6374aEe
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 36.4310 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-文登（九火淄博）" data-addr="0x6Fd7C6D6F5775Bcc26882F9022062e50226763ed" data-trigger="1">
+  <td class="idx">39/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3708067481" target="_blank" rel="noopener">5-文登（九火淄博）</a></td>
+  <td class="addr" title="0x6Fd7C6D6F5775Bcc26882F9022062e50226763ed">0x6Fd7C6…6763ed</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-文登（九火淄博）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-文登（九火淄博）
+🔗 地址：0x6Fd7C6D6F5775Bcc26882F9022062e50226763ed
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 转出未报备
+　　非白名单转出：240.0000 ARK
+　　非白名单转入：0 ARK
+　　净转出：240.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3708067481" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-文登（九火淄博）
+🔗 地址：0x6Fd7C6D6F5775Bcc26882F9022062e50226763ed
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 转出未报备
+　　非白名单转出：240.0000 ARK
+　　非白名单转入：0 ARK
+　　净转出：240.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-御风（未来川东麒麟）" data-addr="0x8ed815b1aCa3D4b6f324ecE44c04d26b5050f02f" data-trigger="2">
+  <td class="idx">40/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3943807742" target="_blank" rel="noopener">5-御风（未来川东麒麟）</a></td>
+  <td class="addr" title="0x8ed815b1aCa3D4b6f324ecE44c04d26b5050f02f">0x8ed815…50f02f</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ 5-御风（未来川东麒麟）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-御风（未来川东麒麟）
+🔗 地址：0x8ed815b1aCa3D4b6f324ecE44c04d26b5050f02f
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 83.9763 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 转出未报备
+　　非白名单转出：214.0000 ARK
+　　非白名单转入：86.0000 ARK
+　　净转出：128.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3943807742" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-御风（未来川东麒麟）
+🔗 地址：0x8ed815b1aCa3D4b6f324ecE44c04d26b5050f02f
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 83.9763 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 转出未报备
+　　非白名单转出：214.0000 ARK
+　　非白名单转入：86.0000 ARK
+　　净转出：128.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-枭狼（九紫）" data-addr="0x9265D8eDe61bA7F93Dabf2FbA4fC43c8EfAEea75" data-trigger="1">
+  <td class="idx">41/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3770641800" target="_blank" rel="noopener">6-枭狼（九紫）</a></td>
+  <td class="addr" title="0x9265D8eDe61bA7F93Dabf2FbA4fC43c8EfAEea75">0x9265D8…AEea75</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 6-枭狼（九紫）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-枭狼（九紫）
+🔗 地址：0x9265D8eDe61bA7F93Dabf2FbA4fC43c8EfAEea75
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 46.5689 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3770641800" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-枭狼（九紫）
+🔗 地址：0x9265D8eDe61bA7F93Dabf2FbA4fC43c8EfAEea75
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 46.5689 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="6-亮剑（九火合肥荣耀）" data-addr="0x94B9A3Feb46dB9BCc5A5B65425dF0E92A3DbD82c" data-trigger="1">
+  <td class="idx">42/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3730231786" target="_blank" rel="noopener">6-亮剑（九火合肥荣耀）</a></td>
+  <td class="addr" title="0x94B9A3Feb46dB9BCc5A5B65425dF0E92A3DbD82c">0x94B9A3…DbD82c</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 6-亮剑（九火合肥荣耀）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-亮剑（九火合肥荣耀）
+🔗 地址：0x94B9A3Feb46dB9BCc5A5B65425dF0E92A3DbD82c
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 40.9080 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3730231786" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：6-亮剑（九火合肥荣耀）
+🔗 地址：0x94B9A3Feb46dB9BCc5A5B65425dF0E92A3DbD82c
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 40.9080 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-勇往（赢天下天一）" data-addr="0x94D941f3bB8E40c6CDFb7d78F15dB6fFa4b5551b" data-trigger="1">
+  <td class="idx">43/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3808697987" target="_blank" rel="noopener">5-勇往（赢天下天一）</a></td>
+  <td class="addr" title="0x94D941f3bB8E40c6CDFb7d78F15dB6fFa4b5551b">0x94D941…b5551b</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-勇往（赢天下天一）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-勇往（赢天下天一）
+🔗 地址：0x94D941f3bB8E40c6CDFb7d78F15dB6fFa4b5551b
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 7.6424 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3808697987" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-勇往（赢天下天一）
+🔗 地址：0x94D941f3bB8E40c6CDFb7d78F15dB6fFa4b5551b
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 7.6424 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-飞跃（超亿）" data-addr="0x95368108066b478f08761F27b11EEc664739Ed6C" data-trigger="1">
+  <td class="idx">44/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3223412457" target="_blank" rel="noopener">5-飞跃（超亿）</a></td>
+  <td class="addr" title="0x95368108066b478f08761F27b11EEc664739Ed6C">0x953681…39Ed6C</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-飞跃（超亿）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-飞跃（超亿）
+🔗 地址：0x95368108066b478f08761F27b11EEc664739Ed6C
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 46.2799 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3223412457" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-飞跃（超亿）
+🔗 地址：0x95368108066b478f08761F27b11EEc664739Ed6C
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 46.2799 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-土豪（九火郑州开心姐）" data-addr="0x9C8e74a6940406473b3814Afb98Fb59AcEDfb0a7" data-trigger="1">
+  <td class="idx">45/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3935271590" target="_blank" rel="noopener">5-土豪（九火郑州开心姐）</a></td>
+  <td class="addr" title="0x9C8e74a6940406473b3814Afb98Fb59AcEDfb0a7">0x9C8e74…Dfb0a7</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-土豪（九火郑州开心姐）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-土豪（九火郑州开心姐）
+🔗 地址：0x9C8e74a6940406473b3814Afb98Fb59AcEDfb0a7
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：459.4500 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3935271590" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-土豪（九火郑州开心姐）
+🔗 地址：0x9C8e74a6940406473b3814Afb98Fb59AcEDfb0a7
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：459.4500 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-李仙菊（超亿）" data-addr="0x9CDf6AefD4673e96510B5465E90684A265d28008" data-trigger="1">
+  <td class="idx">46/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3818864355" target="_blank" rel="noopener">5-李仙菊（超亿）</a></td>
+  <td class="addr" title="0x9CDf6AefD4673e96510B5465E90684A265d28008">0x9CDf6A…d28008</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-李仙菊（超亿）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-李仙菊（超亿）
+🔗 地址：0x9CDf6AefD4673e96510B5465E90684A265d28008
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：238.7619 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3818864355" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-李仙菊（超亿）
+🔗 地址：0x9CDf6AefD4673e96510B5465E90684A265d28008
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：238.7619 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-火火（爱迪生串串）" data-addr="0xa2e9dd14974cF9f8F943Df4a3eA6ceD5E1E8353e" data-trigger="1">
+  <td class="idx">47/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3926712198" target="_blank" rel="noopener">5-火火（爱迪生串串）</a></td>
+  <td class="addr" title="0xa2e9dd14974cF9f8F943Df4a3eA6ceD5E1E8353e">0xa2e9dd…E8353e</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-火火（爱迪生串串）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-火火（爱迪生串串）
+🔗 地址：0xa2e9dd14974cF9f8F943Df4a3eA6ceD5E1E8353e
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：350.9610 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3926712198" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-火火（爱迪生串串）
+🔗 地址：0xa2e9dd14974cF9f8F943Df4a3eA6ceD5E1E8353e
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：350.9610 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-All in -3 강동섭리더" data-addr="0xad028C39358838591084Ef95A489d6DEe692628F" data-trigger="2">
+  <td class="idx">48/58</td>
+  <td class="group-cell">5-All in -3 강동섭리더 <span class="badge-no-match">❌ no-match</span></td>
+  <td class="addr" title="0xad028C39358838591084Ef95A489d6DEe692628F">0xad028C…92628F</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ 5-All in -3 강동섭리더</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-All in -3 강동섭리더
+🔗 地址：0xad028C39358838591084Ef95A489d6DEe692628F
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：206.0858 枚
+　　细则上限：单地址 100 枚
+
+2️⃣ 转出未报备
+　　非白名单转出：1.0000 ARK
+　　非白名单转入：0 ARK
+　　净转出：1.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><span class="copy-group-btn disabled" title="群名未匹配映射表">未匹配</span><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-All in -3 강동섭리더
+🔗 地址：0xad028C39358838591084Ef95A489d6DEe692628F
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：206.0858 枚
+　　细则上限：单地址 100 枚
+
+2️⃣ 转出未报备
+　　非白名单转出：1.0000 ARK
+　　非白名单转入：0 ARK
+　　净转出：1.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-通宝阁（九火九凤重庆）" data-addr="0xAd5c248b3C353F5F0d3970Dde00aA35f6C25ad93" data-trigger="1">
+  <td class="idx">49/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3384438054" target="_blank" rel="noopener">5-通宝阁（九火九凤重庆）</a></td>
+  <td class="addr" title="0xAd5c248b3C353F5F0d3970Dde00aA35f6C25ad93">0xAd5c24…25ad93</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-通宝阁（九火九凤重庆）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-通宝阁（九火九凤重庆）
+🔗 地址：0xAd5c248b3C353F5F0d3970Dde00aA35f6C25ad93
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 6.4955 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3384438054" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-通宝阁（九火九凤重庆）
+🔗 地址：0xAd5c248b3C353F5F0d3970Dde00aA35f6C25ad93
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 6.4955 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-爱迪生TZ（爱迪生）" data-addr="0xc5583668BfA8DE1809428208bD0c42F167f3922F" data-trigger="1">
+  <td class="idx">50/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3123108390" target="_blank" rel="noopener">5-爱迪生TZ（爱迪生）</a></td>
+  <td class="addr" title="0xc5583668BfA8DE1809428208bD0c42F167f3922F">0xc55836…f3922F</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-爱迪生TZ（爱迪生）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-爱迪生TZ（爱迪生）
+🔗 地址：0xc5583668BfA8DE1809428208bD0c42F167f3922F
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 14.2620 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3123108390" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-爱迪生TZ（爱迪生）
+🔗 地址：0xc5583668BfA8DE1809428208bD0c42F167f3922F
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 14.2620 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-大象（乘风宁波）" data-addr="0xcbB0F1EdfA19957C9D3B051F08D48F908D6441B3" data-trigger="2">
+  <td class="idx">51/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3570393965" target="_blank" rel="noopener">5-大象（乘风宁波）</a></td>
+  <td class="addr" title="0xcbB0F1EdfA19957C9D3B051F08D48F908D6441B3">0xcbB0F1…6441B3</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">2</td>
+  <td class="target">→ 5-大象（乘风宁波）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-大象（乘风宁波）
+🔗 地址：0xcbB0F1EdfA19957C9D3B051F08D48F908D6441B3
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 25.1792 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 转出未报备
+　　非白名单转出：11.0000 ARK
+　　非白名单转入：0 ARK
+　　净转出：11.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3570393965" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-大象（乘风宁波）
+🔗 地址：0xcbB0F1EdfA19957C9D3B051F08D48F908D6441B3
+━━━━━━━━━
+❌ 本次触发 2 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 25.1792 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 转出未报备
+　　非白名单转出：11.0000 ARK
+　　非白名单转入：0 ARK
+　　净转出：11.0000 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-志合（开源）" data-addr="0xDb13f108c163f4D47e43d2a60E8c433e24A8F540" data-trigger="1">
+  <td class="idx">52/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3431380067" target="_blank" rel="noopener">5-志合（开源）</a></td>
+  <td class="addr" title="0xDb13f108c163f4D47e43d2a60E8c433e24A8F540">0xDb13f1…A8F540</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-志合（开源）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-志合（开源）
+🔗 地址：0xDb13f108c163f4D47e43d2a60E8c433e24A8F540
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 7.6925 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3431380067" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-志合（开源）
+🔗 地址：0xDb13f108c163f4D47e43d2a60E8c433e24A8F540
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 7.6925 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-韦亿甘肃（韦亿）" data-addr="0xE014c7f6a1Ff4449a1A2318a0835eeB5190C1009" data-trigger="1">
+  <td class="idx">53/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3874690462" target="_blank" rel="noopener">5-韦亿甘肃（韦亿）</a></td>
+  <td class="addr" title="0xE014c7f6a1Ff4449a1A2318a0835eeB5190C1009">0xE014c7…0C1009</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-韦亿甘肃（韦亿）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-韦亿甘肃（韦亿）
+🔗 地址：0xE014c7f6a1Ff4449a1A2318a0835eeB5190C1009
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 转出未报备
+　　非白名单转出：250.0000 ARK
+　　非白名单转入：19.1100 ARK
+　　净转出：230.8900 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3874690462" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-韦亿甘肃（韦亿）
+🔗 地址：0xE014c7f6a1Ff4449a1A2318a0835eeB5190C1009
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 转出未报备
+　　非白名单转出：250.0000 ARK
+　　非白名单转入：19.1100 ARK
+　　净转出：230.8900 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="-" data-addr="0xe63C5da7f9b34Ff1CC3d4677A70060b0300Df2B7" data-trigger="1">
+  <td class="idx">54/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3673388564" target="_blank" rel="noopener">-</a></td>
+  <td class="addr" title="0xe63C5da7f9b34Ff1CC3d4677A70060b0300Df2B7">0xe63C5d…0Df2B7</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ -（地址尾號 0Df2B7）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：-
+🔗 地址：0xe63C5da7f9b34Ff1CC3d4677A70060b0300Df2B7
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 11.0804 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3673388564" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：-
+🔗 地址：0xe63C5da7f9b34Ff1CC3d4677A70060b0300Df2B7
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 11.0804 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-茂名（九火金阳）" data-addr="0xeE326093d1e5481264c21C1a1798F5c3A40c0691" data-trigger="4">
+  <td class="idx">55/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3515280466" target="_blank" rel="noopener">5-茂名（九火金阳）</a></td>
+  <td class="addr" title="0xeE326093d1e5481264c21C1a1798F5c3A40c0691">0xeE3260…0c0691</td>
+  <td class="trigger" style="color:#c0392b;font-weight:600">4</td>
+  <td class="target">→ 5-茂名（九火金阳）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-茂名（九火金阳）
+🔗 地址：0xeE326093d1e5481264c21C1a1798F5c3A40c0691
+━━━━━━━━━
+❌ 本次触发 4 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 256.8842 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 卖币剩余 U 超标
+　　卖出 ARK：509.5668 枚（卖出获得：2,587.2262 U）
+　　涡轮 ARK：247.1127 枚（涡轮花费：1,290.8486 U）
+　　差额 U：1,296.3775 U（并未购买贡献值）
+　　警戒线：1,000 U
+
+　　💡 差额 U 是什么？
+　　　你卖币拿到的 U，减去做涡轮花掉的 U，
+　　　剩下没有投回生态、也没有拿去买贡献值的部分。
+　　　2,587.2262 − 1,290.8486 = 1,296.3775 U
+　　　这笔钱留着是可以的，但金额过大等同于变相套现，
+　　　超过 1,000 U 即触发警报。
+
+3️⃣ 地址余额超标
+　　当前 ARK 余额：130.9461 枚
+　　细则上限：单地址 100 枚
+
+4️⃣ 转出未报备
+　　非白名单转出：237.0799 ARK
+　　非白名单转入：0 ARK
+　　净转出：237.0799 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 卖币所得请回流生态，勿大额留存
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3515280466" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-茂名（九火金阳）
+🔗 地址：0xeE326093d1e5481264c21C1a1798F5c3A40c0691
+━━━━━━━━━
+❌ 本次触发 4 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 256.8842 U
+　　细则要求：须选择 60 天周期释放
+
+2️⃣ 卖币剩余 U 超标
+　　卖出 ARK：509.5668 枚（卖出获得：2,587.2262 U）
+　　涡轮 ARK：247.1127 枚（涡轮花费：1,290.8486 U）
+　　差额 U：1,296.3775 U（并未购买贡献值）
+　　警戒线：1,000 U
+
+　　💡 差额 U 是什么？
+　　　你卖币拿到的 U，减去做涡轮花掉的 U，
+　　　剩下没有投回生态、也没有拿去买贡献值的部分。
+　　　2,587.2262 − 1,290.8486 = 1,296.3775 U
+　　　这笔钱留着是可以的，但金额过大等同于变相套现，
+　　　超过 1,000 U 即触发警报。
+
+3️⃣ 地址余额超标
+　　当前 ARK 余额：130.9461 枚
+　　细则上限：单地址 100 枚
+
+4️⃣ 转出未报备
+　　非白名单转出：237.0799 ARK
+　　非白名单转入：0 ARK
+　　净转出：237.0799 ARK
+　　报备状态：未收到报备
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+　　· 卖币所得请回流生态，勿大额留存
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+　　· 不得转出代币至其他地址
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-山东德州（九火淄博）" data-addr="0xF1bA196eeF3E4fc0D09E3A18Af675BdB440b2836" data-trigger="1">
+  <td class="idx">56/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3525959860" target="_blank" rel="noopener">5-山东德州（九火淄博）</a></td>
+  <td class="addr" title="0xF1bA196eeF3E4fc0D09E3A18Af675BdB440b2836">0xF1bA19…0b2836</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-山东德州（九火淄博）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-山东德州（九火淄博）
+🔗 地址：0xF1bA196eeF3E4fc0D09E3A18Af675BdB440b2836
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：564.9100 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3525959860" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-山东德州（九火淄博）
+🔗 地址：0xF1bA196eeF3E4fc0D09E3A18Af675BdB440b2836
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 地址余额超标
+　　当前 ARK 余额：564.9100 枚
+　　细则上限：单地址 100 枚
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 单地址 ARK 可用余额控制在 100 枚以内
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-平安（蚂蚁般若凤城）" data-addr="0xfA3869d945fc8f699ECD093025E1DB86e063115b" data-trigger="1">
+  <td class="idx">57/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3739435214" target="_blank" rel="noopener">5-平安（蚂蚁般若凤城）</a></td>
+  <td class="addr" title="0xfA3869d945fc8f699ECD093025E1DB86e063115b">0xfA3869…63115b</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-平安（蚂蚁般若凤城）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-平安（蚂蚁般若凤城）
+🔗 地址：0xfA3869d945fc8f699ECD093025E1DB86e063115b
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 12.6751 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3739435214" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-平安（蚂蚁般若凤城）
+🔗 地址：0xfA3869d945fc8f699ECD093025E1DB86e063115b
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：30天
+　　明细：动态30天 12.6751 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报">复制通知</button></td>
+</tr>
+
+<tr data-group="5-燕京（幸运）" data-addr="0xFCA1b8c054a3De1f82EEFF326D19C3946b5aeF89" data-trigger="1">
+  <td class="idx">58/58</td>
+  <td class="group-cell"><a class="group-link" href="https://telegram.me/c/3402371425" target="_blank" rel="noopener">5-燕京（幸运）</a></td>
+  <td class="addr" title="0xFCA1b8c054a3De1f82EEFF326D19C3946b5aeF89">0xFCA1b8…5aeF89</td>
+  <td class="trigger" style="color:#c77700;font-weight:600">1</td>
+  <td class="target">→ 5-燕京（幸运）</td>
+  <td class="content-cell">
+    <details><summary></summary><pre class="content-full">─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-燕京（幸运）
+🔗 地址：0xFCA1b8c054a3De1f82EEFF326D19C3946b5aeF89
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 43.5183 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报
+
+
+================================================================================
+全部结束
+================================================================================</pre></details>
+  </td>
+  <td class="actions"><a class="copy-group-btn" href="https://telegram.me/c/3402371425" target="_blank" rel="noopener">跳转群</a><button class="copy-btn" data-copy="─────────────
+
+⚠️ 818共识 · 违规通知
+━━━━━━━━━
+🗓 监控日期：8月27日（00:00—23:59 UTC+8）
+👥 查询群：5-燕京（幸运）
+🔗 地址：0xFCA1b8c054a3De1f82EEFF326D19C3946b5aeF89
+━━━━━━━━━
+❌ 本次触发 1 项
+
+1️⃣ 释放周期违规
+　　当日使用周期：0天
+　　明细：动态0天 43.5183 U
+　　细则要求：须选择 60 天周期释放
+━━━━━━━━━
+📩 请于剩余共识期间注意
+　　· 释放周期改回 60 天
+━━━━━━━━━
+🚨🚨🚨 严正警告 🚨🚨🚨
+━━━━━━━━━
+本次为警告通知，无需回复。
+
+⛔ 若再次触发警报，将立即执行：
+1️⃣ 取消餐补、办公室、讲师等一切补贴
+2️⃣ 取消 ETH 奖励资格
+3️⃣ 全网通报
+
+
+================================================================================
+全部结束
+================================================================================">复制通知</button></td>
+</tr>
+</tbody>
+</table>
+<div id="empty" class="empty" style="display:none">无匹配结果</div>
+<script>
+  // 复制通知 (跳过 ✂ 分隔线 - 但 content 已经是剥离后的纯通知, 直接复制)
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const text = btn.getAttribute('data-copy');
+      try {
+        await navigator.clipboard.writeText(text);
+        const orig = btn.textContent;
+        btn.textContent = '✓ 已复制';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = orig; btn.classList.remove('copied'); }, 1500);
+      } catch (e) {
+        // 降级: 旧浏览器
+        const ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta);
+        ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+        btn.textContent = '✓ 已复制';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = '复制通知'; btn.classList.remove('copied'); }, 1500);
+      }
+    });
+  });
+
+  // 搜索过滤
+  const search = document.getElementById('search');
+  const rows = document.querySelectorAll('#rows tr');
+  const stats = document.getElementById('stats');
+  const empty = document.getElementById('empty');
+  function filterRows() {
+    const q = search.value.trim().toLowerCase();
+    let shown = 0;
+    rows.forEach(r => {
+      const hay = (r.dataset.group + ' ' + r.dataset.addr + ' ' + r.dataset.trigger).toLowerCase();
+      const show = !q || hay.includes(q);
+      r.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    stats.textContent = shown < rows.length ? `${shown} / ${rows.length}` : '';
+    empty.style.display = (shown === 0) ? 'block' : 'none';
+  }
+  search.addEventListener('input', filterRows);
+</script>
+</body>
+</html>
