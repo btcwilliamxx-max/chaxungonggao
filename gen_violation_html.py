@@ -37,6 +37,8 @@ except Exception:
 ROOT = Path(__file__).resolve().parent
 MAPPING = Path(r'G:\餐补\群组映射表.json')
 OUTPUT = ROOT / 'index.html'
+# 群组映射表原始 dict (含 invite_link 字段), main() 里 load
+MAPPING_RAW = {}
 
 # 群名去前缀/后缀 + 模糊归一
 _PREFIX_RE = re.compile(r'^\s*\d{1,3}\s*[-－]\s*')
@@ -138,16 +140,19 @@ def match_group(group_name, exact, norm):
     return None, 'no-match'
 
 
-def chat_id_to_tg_url(chat_id):
-    """chat_id (TG Supergroup, -100xxx) → tg:// 深链唤起 Telegram Desktop 直接进群
+def chat_id_to_tg_url(chat_id, invite_link=None):
+    """生成 Telegram 群跳转链接
 
-    注意: 私域群 (没公开 username) 用 https://t.me/c/chat_id 在浏览器会被 TG
-    服务器重定向到 telegram.org 主页 (因为 web 客户端检测不到当前 user 是群成员
-    且没装桌面客户端拦截), 必须用 tg:// 协议唤起本地 Telegram Desktop 客户端。
-
-    前提: Windows 装了 Telegram Desktop 客户端 (https://desktop.telegram.org/),
-    浏览器点 tg:// 链接会自动弹出"在 Telegram 中打开"对话框, user 确认后直接进群。
+    优先级:
+      1. invite_link (`https://t.me/+{hash}`) — 跨平台通用, iOS Safari/Desktop/
+         Android 都能直接进群, 浏览器也认 (私域群标准格式)
+      2. tg://resolve?domain=c/{chat_id} — 唤起 Telegram Desktop 客户端
+         (但 Telegram 官方不支持此格式, 8/29 验证只打开 app 不跳群, 已弃用)
+      3. https://t.me/c/{chat_id} — 浏览器 fallback (私域群没公开 username
+         会被 TG 服务器重定向到 telegram.org 主页, 也基本不可用)
     """
+    if invite_link:
+        return invite_link  # t.me/+{hash} 跨平台最稳
     s = str(chat_id)
     if s.startswith('-100'):
         cid = s[4:]
@@ -155,7 +160,8 @@ def chat_id_to_tg_url(chat_id):
         cid = s[1:]
     else:
         cid = s
-    return f'tg://resolve?domain=c/{cid}'
+    # fallback: t.me/c/{chat_id} (私域群大概率跳主页, 但至少不会被拦截)
+    return f'https://t.me/c/{cid}'
 
 
 def render_html(items, source_files):
@@ -173,14 +179,23 @@ def render_html(items, source_files):
         trigger_n = it['trigger_n']
         content = it['content']
         chat_id, match_type = match_group(group, EXACT, NORM)
+        invite_link = None
         if chat_id:
-            tg_url = chat_id_to_tg_url(chat_id)
-            # 群名 click 走 tg:// (唤起 Telegram Desktop), 按钮 click 也一样
-            group_cell = f'<a class="group-link" href="{tg_url}" rel="noopener">{html.escape(group)}</a>'
-            jump_btn = f'<a class="copy-group-btn" href="{tg_url}" rel="noopener">跳转群</a>'
+            # 从映射表查 invite_link (如果有)
+            cid_str = str(chat_id)
+            for title_key, info in MAPPING_RAW.items():
+                if str(info.get('chat_id', '')) == cid_str:
+                    invite_link = info.get('invite_link')
+                    break
+            tg_url = chat_id_to_tg_url(chat_id, invite_link=invite_link)
+            # 群名 click 走 invite_link (跨平台), 按钮 click 也一样
+            group_cell = f'<a class="group-link" href="{tg_url}" target="_blank" rel="noopener">{html.escape(group)}</a>'
+            jump_btn = f'<a class="copy-group-btn" href="{tg_url}" target="_blank" rel="noopener">跳转群</a>'
+            name_btn = f'<button class="copy-name-btn" data-name-copy="{html.escape(group)}">复制群名</button>'
         else:
             group_cell = f'{html.escape(group)} <span class="badge-no-match">❌ {match_type}</span>'
             jump_btn = f'<span class="copy-group-btn disabled" title="群名未匹配映射表">未匹配</span>'
+            name_btn = f'<button class="copy-name-btn" data-name-copy="{html.escape(group)}">复制群名</button>'
         addr_short = (addr[:8] + '…' + addr[-6:]) if addr else '-'
         addr_full = html.escape(addr)
         # 触发项数 + 颜色
@@ -203,7 +218,7 @@ def render_html(items, source_files):
   <td class="content-cell">
     <details><summary>{preview_esc}</summary><pre class="content-full">{content_escaped}</pre></details>
   </td>
-  <td class="actions">{jump_btn}{copy_btn}</td>
+  <td class="actions">{jump_btn}{name_btn}{copy_btn}</td>
 </tr>''')
 
     rows_str = '\n'.join(rows_html)
@@ -274,6 +289,14 @@ def render_html(items, source_files):
   .copy-group-btn.disabled {{ background: #e8e8ed; color: #999; cursor: not-allowed;
                              box-shadow: none; }}
   .copy-group-btn.disabled::before {{ content: '❌'; }}
+  .copy-name-btn {{ background: linear-gradient(135deg, #5856d6 0%, #af52de 100%);
+                    color: #fff; border: none; border-radius: 5px;
+                    padding: 5px 10px; font-size: 12px; cursor: pointer;
+                    white-space: nowrap; box-shadow: 0 1px 3px rgba(88,86,214,0.4);
+                    margin-left: 4px; min-width: 78px; box-sizing: border-box; text-align: center; }}
+  .copy-name-btn:hover {{ background: linear-gradient(135deg, #6e6ce8 0%, #c270ee 100%); }}
+  .copy-name-btn.copied {{ background: #28a745; }}
+  .copy-name-btn::before {{ content: '📋'; margin-right: 3px; }}
 </style>
 </head>
 <body>
@@ -320,6 +343,27 @@ def render_html(items, source_files):
     }});
   }});
 
+  // 复制群名 (紫色按钮) - 用于在 Telegram 搜索框里搜群
+  document.querySelectorAll('.copy-name-btn').forEach(btn => {{
+    btn.addEventListener('click', async () => {{
+      const text = btn.getAttribute('data-name-copy');
+      try {{
+        await navigator.clipboard.writeText(text);
+        const orig = btn.textContent;
+        btn.textContent = '✓ 已复制';
+        btn.classList.add('copied');
+        setTimeout(() => {{ btn.textContent = orig; btn.classList.remove('copied'); }}, 1500);
+      }} catch (e) {{
+        const ta = document.createElement('textarea');
+        ta.value = text; document.body.appendChild(ta);
+        ta.select(); document.execCommand('copy'); document.body.removeChild(ta);
+        btn.textContent = '✓ 已复制';
+        btn.classList.add('copied');
+        setTimeout(() => {{ btn.textContent = '复制群名'; btn.classList.remove('copied'); }}, 1500);
+      }}
+    }});
+  }});
+
   // 搜索过滤
   const search = document.getElementById('search');
   const rows = document.querySelectorAll('#rows tr');
@@ -351,7 +395,8 @@ def main():
     ap.add_argument('--mapping', default=str(MAPPING))
     args = ap.parse_args()
 
-    global EXACT, NORM
+    global EXACT, NORM, MAPPING_RAW
+    MAPPING_RAW = json.loads(Path(args.mapping).read_text(encoding='utf-8'))
     EXACT, NORM = load_mapping()
     print(f'[*] 群组映射: {len(EXACT)} 个查询群 (精确), {len(NORM)} 个 (归一后)')
 
