@@ -117,11 +117,18 @@ def match_group(group_name, exact, norm):
         return exact[group_name], 'exact'
     # 2) 归一后查 norm
     n = normalize_group(group_name)
+    if not n or len(n) < 2 or n in ('-', '_', '?', '？', '无', '空'):
+        # 群名是占位符 (-/?/空), 跳过 fuzzy (否则 "-" 是任何字符串子串会误匹配)
+        return None, 'placeholder'
     if n in norm:
         return norm[n], 'normalized'
     # 3) 模糊: 归一后 substring (双向)
     candidates = []
     for title_norm, cid in norm.items():
+        if title_norm == n:
+            continue
+        if len(title_norm) < 2:
+            continue
         if n in title_norm or title_norm in n:
             candidates.append((title_norm, cid))
     if candidates:
