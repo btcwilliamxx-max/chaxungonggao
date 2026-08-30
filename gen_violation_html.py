@@ -103,11 +103,21 @@ def parse_one(txt_path: Path):
             'group': m_group.group(1).strip() if m_group else None,
             'addr': m_addr.group(1) if m_addr else None,
             'trigger_n': int(m_count.group(1)) if m_count else 0,
-            # 通知正文: 从 "⚠️ 818共识..." 开始到末尾 (去掉 ✂ 残尾)
-            'content': content.strip(),
+            # 通知正文: 从 "⚠️ 818共识" 开始截断, 去掉 ✂ 残尾 ─── 8/30 user 拍板
+            'content': _strip_xian_residual(content),
             'source_file': txt_path.name,
         })
     return items
+
+
+def _strip_xian_residual(content):
+    """从 ⚠️ 818共识 起始位置截断, 去掉前面 ✂ 切分残尾 ─── 和空行"""
+    s = content.strip()
+    marker = '⚠️ 818共识'
+    i = s.find(marker)
+    if i > 0:
+        s = s[i:].strip()
+    return s
 
 
 def match_group(group_name, exact, norm):
@@ -252,7 +262,9 @@ def render_html(items, source_files):
             font-size: 13px; vertical-align: top; }}
   th {{ background: #fafafc; font-weight: 600; color: #6e6e73; font-size: 12px;
         text-transform: uppercase; letter-spacing: 0.5px; }}
-  tr:hover td {{ background: #f8f9fb; }}
+  tr:hover td {{ background: #e3f2fd; }}
+  tr {{ border-left: 2px solid transparent; transition: border-color 0.1s; }}
+  tr:hover {{ border-left: 2px solid #0071e3; }}
   .addr {{ font-family: "SF Mono", Consolas, monospace; font-size: 12px; color: #6e6e73; }}
   .idx {{ color: #6e6e73; font-size: 12px; font-weight: 500; white-space: nowrap; }}
   .target {{ color: #6e6e73; font-size: 12px; white-space: nowrap; }}
